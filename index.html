@@ -3,272 +3,369 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Triveraa Sonkupi Eco Resort</title>
+  <title>Triveraa Sonkupi Eco Resort — Nature. Culture. Comfort.</title>
+  <meta name="description" content="Triveraa Sonkupi Eco Resort, Purulia — premium eco cottages, authentic Purulia cuisine, Chhau dance performances and the majestic hills of Sonkupi. Book your nature retreat today.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-      <a href="#" class="logo">
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
         <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort">
       </a>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#accommodation">Stay</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#scenic" class="nav-link">Explore</a></li>
+          <li><a href="#culture" class="nav-link">Culture</a></li>
+          <li><a href="#cuisine" class="nav-link">Dining</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="btn-header">Book Now</a>
-      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-nav">Book Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <div class="hero-media" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05')"></div>
+    <div class="hero-shade shade-1"></div>
+    <div class="hero-shade shade-2"></div>
     <div class="hero-content">
-      <p class="hero-subtitle">Welcome to</p>
-      <h1>Triveraa Sonkupi<br>Eco Resort</h1>
-      <p class="hero-desc">Escape to the peaceful countryside. Relax, rejuvenate, reconnect with nature.</p>
-      <a href="#about" class="btn">Explore More</a>
+      <h1>Escape to<br><span>Nature</span></h1>
+      <p class="hero-lead">Experience the untouched beauty of Purulia amidst majestic hills, forests and tribal culture.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Book Your Stay</a>
+        <a href="#gallery" class="btn btn-outline"><span class="play-cue"><i class="fas fa-play fa-2xs"></i></span> Explore Gallery</a>
+      </div>
     </div>
-    <a href="#about" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
   </section>
 
+  <!-- ============ ABOUT ============ -->
   <section id="about" class="section about">
     <div class="container">
-      <div class="about-wrapper">
-        <div class="about-logo">
-          <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort">
-          <p class="about-tagline">Your gateway to serenity</p>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="section-label">Welcome to Triveraa</p>
+          <h2 class="about-title">Nature. Culture.<br>Comfort. Memories.<span class="leaf">&#127807;</span></h2>
+          <p>Nestled in the lap of nature at Sonkupi, Purulia, Triveraa Sonkupi Eco Resort is a perfect weekend getaway for families, friends and nature lovers.</p>
+          <p class="mb-extra">Enjoy premium stay, authentic local cuisine, cultural performances and warm hospitality in a serene environment.</p>
+          <a href="#contact" class="btn btn-primary">Discover More</a>
         </div>
-        <div class="about-text">
-          <h2>Our Story</h2>
-          <p>Nestled in the heart of the countryside, Triveraa Sonkupi Eco Resort offers a perfect getaway from the chaos of city life. Surrounded by lush greenery, rolling hills, and fresh air, our resort is designed for those who seek peace, comfort, and natural beauty.</p>
-          <p>Whether you're here for a weekend retreat, a family vacation, or a quiet solo trip, we provide warm hospitality, cozy accommodations, and experiences that bring you closer to nature.</p>
-          <a href="#accommodation" class="btn-outline">View Accommodations</a>
+        <div class="about-media">
+          <img src="images/Cottage.jpg.jpeg" alt="Eco cottage at Triveraa Sonkupi Eco Resort">
+          <span class="play-badge"><i class="fas fa-play"></i></span>
+        </div>
+      </div>
+      <div class="highlights">
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <p class="h-name">Scenic Location</p>
+          <p class="h-desc">Surrounded by hills &amp; greenery</p>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-leaf"></i></div>
+          <p class="h-name">Eco Friendly</p>
+          <p class="h-desc">Sustainable &amp; nature friendly</p>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <p class="h-name">Premium Cottages</p>
+          <p class="h-desc">Comfortable stay &amp; amenities</p>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-utensils"></i></div>
+          <p class="h-name">Authentic Food</p>
+          <p class="h-desc">Traditional Purulia delicacies</p>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-masks-theater"></i></div>
+          <p class="h-name">Cultural Programs</p>
+          <p class="h-desc">Live Chhau dance &amp; tribal culture</p>
+        </div>
+        <div class="highlight">
+          <div class="highlight-icon"><i class="fa-solid fa-fire"></i></div>
+          <p class="h-name">Bonfire &amp; More</p>
+          <p class="h-desc">Bonfire, music &amp; fun activities</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="accommodation" class="section accommodation">
+  <!-- ============ OVERVIEW ============ -->
+  <section id="overview" class="section overview">
     <div class="container">
-      <div class="section-header">
-        <p class="section-label">Where you'll stay</p>
-        <h2>Choose Your Experience</h2>
-        <p class="section-desc">Each accommodation is thoughtfully designed to immerse you in nature without compromising on comfort.</p>
-      </div>
-      <div class="accommodation-cards">
-        <div class="acc-card" data-accommodation="cottage">
-          <div class="acc-icon">
-            <i class="fas fa-home"></i>
-          </div>
-          <h3>Cottage</h3>
-          <p>Cozy cottage surrounded by flowering gardens. Perfect for couples seeking romance and tranquility.</p>
-          <ul class="acc-amenities">
-            <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
-            <li><i class="fas fa-snowflake"></i> Air Conditioning</li>
-            <li><i class="fas fa-bed"></i> King-size Bed</li>
-          </ul>
-          <span class="acc-price">₹3,500 / night</span>
-          <button class="btn-book">Book Now</button>
+      <div class="split">
+        <div class="split-copy">
+          <p class="section-label">Stay with us</p>
+          <h2 class="section-title">Premium Eco Cottages</h2>
+          <p>Our cottages are designed to blend with nature while providing you modern comfort and luxury.</p>
+          <a href="#contact" class="btn btn-ghost-dark">View All Rooms</a>
         </div>
-        <div class="acc-card featured" data-accommodation="tent">
-          <div class="acc-badge">Popular</div>
-          <div class="acc-icon">
-            <i class="fas fa-campground"></i>
+        <div class="overview-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-count="16">0</span>
+            <span class="stat-lab">Acres of Nature</span>
           </div>
-          <h3>Tent</h3>
-          <p>Experience glamping at its finest. Sleep under the stars with modern camping comforts.</p>
-          <ul class="acc-amenities">
-            <li><i class="fas fa-campground"></i> Campfire Setup</li>
-            <li><i class="fas fa-moon"></i> Stargazing Deck</li>
-            <li><i class="fas fa-shower"></i> Private Bathroom</li>
-          </ul>
-          <span class="acc-price">₹2,500 / night</span>
-          <button class="btn-book">Book Now</button>
-        </div>
-        <div class="acc-card" data-accommodation="premium-cottage">
-          <div class="acc-icon">
-            <i class="fas fa-crown"></i>
+          <div class="stat-card">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-lab">Eco Cottages</span>
           </div>
-          <h3>Premium Cottage</h3>
-          <p>Spacious premium villa with private lake view. Ideal for families and special occasions.</p>
-          <ul class="acc-amenities">
-            <li><i class="fas fa-swimming-pool"></i> Private Pool</li>
-            <li><i class="fas fa-utensils"></i> Personal Chef</li>
-            <li><i class="fas fa-tv"></i> Entertainment System</li>
-          </ul>
-          <span class="acc-price">₹6,500 / night</span>
-          <button class="btn-book">Book Now</button>
+          <div class="stat-card">
+            <span class="stat-num" data-count="8">0</span>
+            <span class="stat-lab">Scenic Getaways</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="1000">0<i class="plus">+</i></span>
+            <span class="stat-lab">Happy Guests</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ SCENIC / EXPLORE ============ -->
+  <section id="scenic" class="section scenic">
+    <div class="container">
+      <div class="explore-head">
+        <div>
+          <p class="section-label">Explore</p>
+          <h2 class="section-title">Nearby Attractions</h2>
+        </div>
+        <div class="explore-nav">
+          <button class="explore-arrow" id="expPrev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+          <button class="explore-arrow" id="expNext" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="explore-track" id="exploreTrack">
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1679429058567-f2ae470cf353" alt="Ayodhya Hills">
+          <div class="explore-shade"></div>
+          <figcaption>Ayodhya Hills</figcaption>
+        </figure>
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1716693968253-c9a78f4c0d7d" alt="Marble Lake">
+          <div class="explore-shade"></div>
+          <figcaption>Marble Lake</figcaption>
+        </figure>
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1630238797385-d59ec455c829" alt="Bamni Falls">
+          <div class="explore-shade"></div>
+          <figcaption>Bamni Falls</figcaption>
+        </figure>
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1599244254358-8d8b3be001d4" alt="Pakhi Pahar">
+          <div class="explore-shade"></div>
+          <figcaption>Pakhi Pahar</figcaption>
+        </figure>
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1626507670634-fc6ef82fbaff" alt="Upper Dam">
+          <div class="explore-shade"></div>
+          <figcaption>Upper Dam</figcaption>
+        </figure>
+        <figure class="explore-card">
+          <img src="https://images.unsplash.com/photo-1596683006597-c7e9ccb1fdee" alt="Lower Dam">
+          <div class="explore-shade"></div>
+          <figcaption>Lower Dam</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CULTURE : CHHAU NACH ============ -->
+  <section id="culture" class="culture">
+    <div class="culture-panel culture-panel--dance">
+      <div class="culture-media"><img src="images/chhau.jpg" alt="Chhau Nach cultural performance"></div>
+      <div class="culture-shade"></div>
+      <div class="culture-body">
+        <p class="section-label label-light">Experience Culture</p>
+        <h2>The Rhythm of<br>Chhau Nach</h2>
+        <p>Witness the vibrant and energetic Chhau dance performances by local artists and feel the rich heritage of Purulia.</p>
+        <a href="#contact" class="btn btn-outline-light">Explore Culture</a>
+      </div>
+    </div>
+    <div class="culture-panel culture-panel--cuisine" id="cuisine">
+      <div class="culture-media"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Authentic Purulia cuisine"></div>
+      <div class="culture-shade"></div>
+      <div class="culture-body">
+        <p class="section-label label-light">Taste Authentic Purulia</p>
+        <h2>Traditional<br>Cuisine</h2>
+        <p>Savor the authentic flavors of Purulia with our specially curated traditional menu.</p>
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <div class="explore-head">
+        <div>
+          <p class="section-label">Taste of the soil</p>
+          <h2 class="section-title">Our Purulia Menu</h2>
+        </div>
+        <div class="explore-nav">
+          <a href="#contact" class="btn btn-primary">Ask About Menu</a>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" alt="Dhuska and chutney"></div>
+          <span class="menu-emoji">&#127831;</span>
+          <h3>Dhuska &amp; Chutney</h3>
+          <p>Crispy fried rice cakes served with a spicy, tangy chutney.</p>
+          <span class="menu-tag">Signature</span>
+        </article>
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Slow cooked desi chicken and mutton curry"></div>
+          <span class="menu-emoji">&#127830;</span>
+          <h3>Mutton &amp; Chicken Desi</h3>
+          <p>Slow-cooked village-style curries bursting with rustic flavour.</p>
+          <span class="menu-tag">Signature</span>
+        </article>
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="Traditional tribal food thali"></div>
+          <span class="menu-emoji">&#127807;</span>
+          <h3>Tribal Cuisine</h3>
+          <p>Local delicacies prepared the traditional tribal way.</p>
+        </article>
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Fresh organic farm vegetables"></div>
+          <span class="menu-emoji">&#127793;</span>
+          <h3>Organic Farm Food</h3>
+          <p>Vegetables grown in our own soil, picked fresh each day.</p>
+        </article>
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554" alt="Traditional rice treats and sweets"></div>
+          <span class="menu-emoji">&#127838;</span>
+          <h3>Dargo &amp; Pithe</h3>
+          <p>Traditional rice treats and seasonal sweets from home kitchens.</p>
+        </article>
+        <article class="menu-item">
+          <div class="menu-img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398" alt="Mahua flower delicacies"></div>
+          <span class="menu-emoji">&#127866;</span>
+          <h3>Mahua Delicacies</h3>
+          <p>Specialties woven from the fragrant mahua flower.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
   <section id="gallery" class="section gallery">
     <div class="container">
-      <div class="section-header">
-        <p class="section-label">Memories captured</p>
-        <h2>Our Gallery</h2>
-        <p class="section-desc">Take a visual tour through the beauty and tranquility of our resort.</p>
+      <div class="explore-head">
+        <div>
+          <p class="section-label">Moments captured</p>
+          <h2 class="section-title">Our Gallery</h2>
+        </div>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item gallery-item--large">
-          <img src="images/Scenery.jpg.jpeg" alt="Scenic View">
-          <div class="gallery-overlay"><span>Scenic Views</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/Cottage.jpg.jpeg" alt="Cottage">
-          <div class="gallery-overlay"><span>Our Cottage</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/tent.jpg.jpeg" alt="Tent">
-          <div class="gallery-overlay"><span>Glamping Tent</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/dining.jpg.jpeg" alt="Dining">
-          <div class="gallery-overlay"><span>Farm-to-Table Dining</span></div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background: #8a7a6a;">
-            <i class="fas fa-tree"></i>
-            <span>Nature Trails</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder" style="background: #6a8a7a;">
-            <i class="fas fa-seedling"></i>
-            <span>Organic Farm</span>
-          </div>
-        </div>
+        <figure class="g-item g-item--big">
+          <img src="images/Scenery.jpg.jpeg" alt="Scenic view of the resort">
+          <figcaption>Scenic Landscapes</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/Cottage.jpg.jpeg" alt="Our cottages">
+          <figcaption>Our Cottages</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/tent.jpg.jpeg" alt="Glamping tents">
+          <figcaption>Glamping Tents</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="images/dining.jpg.jpeg" alt="Farm-to-table dining">
+          <figcaption>Farm-to-Table Dining</figcaption>
+        </figure>
+        <figure class="g-item">
+          <img src="https://images.unsplash.com/photo-1650398247109-69fcd305666e" alt="Deluxe cottage at dusk">
+          <figcaption>Golden Hour</figcaption>
+        </figure>
+        <figure class="g-item g-item--tall">
+          <img src="https://images.unsplash.com/photo-1599244254358-8d8b3be001d4" alt="Hills at dusk">
+          <figcaption>Hills at Dusk</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Get in touch</p>
-        <h2>Contact & Booking</h2>
-        <p class="section-desc">Ready to escape? Send us a message and we'll help plan your perfect stay.</p>
-      </div>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <h4>Address</h4>
-              <p>Triveraa Sonkupi Eco Resort,<br>Sonnkupi, Matha</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 84789 72211</p>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <h4>Email</h4>
-              <p>info@triveraa.com</p>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container contact-wrap">
+      <div class="contact-info">
+        <div class="contact-brand">
+          <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort">
+          <div class="contact-brand-text">
+            <span class="cb-title">Triveraa</span>
+            <span class="cb-sub">Sonkupi Eco Resort</span>
+            <span class="cb-tag">Where Nature Meets Culture</span>
           </div>
         </div>
-        <form class="contact-form">
+        <div class="contact-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/918478972211" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="contact-block">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#overview">Stay</a></li>
+            <li><a href="#scenic">Explore</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#cuisine">Dining</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#culture">Culture</a></li>
+          </ul>
+        </div>
+        <div class="contact-block">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-location-dot"></i> Sonkupi, Matha Forest,<br>Baghmundi, Purulia – 723143</li>
+            <li><a href="tel:+918478972211"><i class="fas fa-phone"></i> +91 84789 72211</a></li>
+            <li><a href="mailto:info@triveraa.com"><i class="fas fa-envelope"></i> info@triveraa.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-form-box">
+        <h3>Plan Your Stay</h3>
+        <form id="contactForm">
           <div class="form-row">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
           </div>
           <input type="text" placeholder="Phone Number">
           <div class="form-row">
-            <input type="text" placeholder="Check-in Date" onfocus="this.type='date'">
-            <input type="text" placeholder="Check-out Date" onfocus="this.type='date'">
+            <input type="text" placeholder="Check-in" onfocus="this.type='date'">
+            <input type="text" placeholder="Check-out" onfocus="this.type='date'">
           </div>
           <textarea placeholder="Your Message or Special Requests" rows="4"></textarea>
-          <button type="submit" class="btn">Send Inquiry <i class="fas fa-arrow-right"></i></button>
+          <button type="submit" class="btn btn-primary btn-block">Send Inquiry <i class="fas fa-arrow-right"></i></button>
         </form>
       </div>
     </div>
+    <div class="contact-bottom">
+      <p>© 2026 Triveraa Sonkupi Eco Resort. All Rights Reserved.</p>
+      <p>Designed with <span class="heart">&#10084;</span> for nature and culture</p>
+    </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort">
-          <p>Experience nature, embrace tranquility.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#accommodation">Accommodations</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Accommodations</h4>
-          <ul>
-            <li><a href="#" data-accommodation="cottage">Cottage</a></li>
-            <li><a href="#" data-accommodation="tent">Tent</a></li>
-            <li><a href="#" data-accommodation="premium-cottage">Premium Cottage</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Triveraa Sonkupi Eco Resort. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <div id="bookingModal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <button class="modal-close"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <div class="modal-icon"><i class="fas fa-home"></i></div>
-        <h3 id="modalTitle">Book Cottage</h3>
-        <p id="modalDesc" class="modal-desc">Fill in your details to reserve this accommodation.</p>
-      </div>
-      <form id="bookingForm" class="modal-form">
-        <input type="hidden" id="accommodationType" value="">
-        <div class="form-row">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email Address" required>
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="Phone Number" required>
-          <input type="number" placeholder="Number of Guests" min="1" max="10" required>
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="Check-in Date" onfocus="this.type='date'" required>
-          <input type="text" placeholder="Check-out Date" onfocus="this.type='date'" required>
-        </div>
-        <textarea placeholder="Special Requests (optional)" rows="3"></textarea>
-        <div class="modal-total">
-          <span>Total Estimate</span>
-          <span id="modalPrice">₹3,500</span>
-        </div>
-        <button type="submit" class="btn btn-block">Confirm Booking <i class="fas fa-arrow-right"></i></button>
-      </form>
-    </div>
-  </div>
+  <a href="https://wa.me/918478972211" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="js/script.js"></script>
 </body>
