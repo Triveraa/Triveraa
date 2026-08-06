@@ -13,28 +13,18 @@
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
+<!-- ============ HEADER ============ -->
   <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="#home" class="brand">
-        <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort">
-      </a>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#overview" class="nav-link">Overview</a></li>
-          <li><a href="#scenic" class="nav-link">Explore</a></li>
-          <li><a href="#culture" class="nav-link">Culture</a></li>
-          <li><a href="#cuisine" class="nav-link">Dining</a></li>
-          <li><a href="#gallery" class="nav-link">Gallery</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <a href="#contact" class="btn btn-primary btn-nav">Book Now</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    <div class="header-top">
+      <div class="container header-top-inner">
+        <a href="tel:+918478972211"><i class="fas fa-phone"></i> +91 84789 72211</a>
+        <a href="mailto:info@triveraa.com"><i class="fas fa-envelope"></i> info@triveraa.com</a>
       </div>
+    </div>
+    <div class="container nav-wrap">
+      <nav class="nav nav-left" id="navLeft"></nav>
+      <nav class="nav nav-right" id="navRight"></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
 
@@ -44,13 +34,15 @@
     <div class="hero-shade shade-1"></div>
     <div class="hero-shade shade-2"></div>
     <div class="hero-content">
-      <h1>Escape to<br><span>Nature</span></h1>
-      <p class="hero-lead">Experience the untouched beauty of Purulia amidst majestic hills, forests and tribal culture.</p>
+      <img src="images/logo.png" alt="Triveraa Sonkupi Eco Resort logo" class="hero-badge">
+      <h1>Triveraa Sonkupi<br><span>Eco Resort</span></h1>
+      <p class="hero-lead">A quiet retreat in the hills of Purulia, where nature, culture and comfort meet.</p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Book Your Stay</a>
-        <a href="#gallery" class="btn btn-outline"><span class="play-cue"><i class="fas fa-play fa-2xs"></i></span> Explore Gallery</a>
+        <a href="#about" class="btn btn-solid">Explore the Resort</a>
+        <a href="#contact" class="btn btn-outline"><span class="play-cue"><i class="fas fa-play fa-2xs"></i></span> Book Your Stay</a>
       </div>
     </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- ============ ABOUT ============ -->
@@ -151,34 +143,52 @@
       </div>
       <div class="explore-track" id="exploreTrack">
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1679429058567-f2ae470cf353" alt="Ayodhya Hills">
-          <div class="explore-shade"></div>
-          <figcaption>Ayodhya Hills</figcaption>
+          <div class="explore-media">
+            <img src="images/image2.jpg" alt="Ayodhya Hills">
+            <div class="explore-shade"></div>
+            <figcaption>Ayodhya Hills</figcaption>
+          </div>
+          <p class="explore-desc">Scenic green hills of Purulia, perfect for trekking and sunrise views.</p>
         </figure>
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1716693968253-c9a78f4c0d7d" alt="Marble Lake">
-          <div class="explore-shade"></div>
-          <figcaption>Marble Lake</figcaption>
+          <div class="explore-media">
+            <img src="https://images.unsplash.com/photo-1716693968253-c9a78f4c0d7d" alt="Marble Lake">
+            <div class="explore-shade"></div>
+            <figcaption>Marble Lake</figcaption>
+          </div>
+          <p class="explore-desc">A serene emerald lake nestled amid the rocky hills of Purulia.</p>
         </figure>
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1630238797385-d59ec455c829" alt="Bamni Falls">
-          <div class="explore-shade"></div>
-          <figcaption>Bamni Falls</figcaption>
+          <div class="explore-media">
+            <img src="images/image1.jpg" alt="Bamni Falls">
+            <div class="explore-shade"></div>
+            <figcaption>Bamni Falls</figcaption>
+          </div>
+          <p class="explore-desc">A tranquil forest waterfall near Sonkupi, best visited in the monsoon.</p>
         </figure>
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1599244254358-8d8b3be001d4" alt="Pakhi Pahar">
-          <div class="explore-shade"></div>
-          <figcaption>Pakhi Pahar</figcaption>
+          <div class="explore-media">
+            <img src="images/image3.jpg" alt="Pakhi Pahar">
+            <div class="explore-shade"></div>
+            <figcaption>Pakhi Pahar</figcaption>
+          </div>
+          <p class="explore-desc">The bird-shaped hill of Purulia, a favourite for photographers.</p>
         </figure>
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1626507670634-fc6ef82fbaff" alt="Upper Dam">
-          <div class="explore-shade"></div>
-          <figcaption>Upper Dam</figcaption>
+          <div class="explore-media">
+            <img src="https://images.unsplash.com/photo-1626507670634-fc6ef82fbaff" alt="Upper Dam">
+            <div class="explore-shade"></div>
+            <figcaption>Upper Dam</figcaption>
+          </div>
+          <p class="explore-desc">Calm waters and open skies for an easy lakeside evening.</p>
         </figure>
         <figure class="explore-card">
-          <img src="https://images.unsplash.com/photo-1596683006597-c7e9ccb1fdee" alt="Lower Dam">
-          <div class="explore-shade"></div>
-          <figcaption>Lower Dam</figcaption>
+          <div class="explore-media">
+            <img src="https://images.unsplash.com/photo-1596683006597-c7e9ccb1fdee" alt="Lower Dam">
+            <div class="explore-shade"></div>
+            <figcaption>Lower Dam</figcaption>
+          </div>
+          <p class="explore-desc">Peaceful picnic spot with gentle water views all year round.</p>
         </figure>
       </div>
     </div>
@@ -204,6 +214,23 @@
         <h2>Traditional<br>Cuisine</h2>
         <p>Savor the authentic flavors of Purulia with our specially curated traditional menu.</p>
         <a href="#menu" class="btn btn-primary">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CULTURE : CHHAU HERITAGE SPREAD ============ -->
+  <section id="chhau-heritage" class="section heritage">
+    <div class="container heritage-grid">
+      <div class="heritage-media">
+        <img src="images/chhau.jpg" alt="Chhau Nach promoted and performed at Triveraa Sonkupi Eco Resort">
+      </div>
+      <div class="heritage-copy">
+        <p class="section-label">Keeping the art alive</p>
+        <h2 class="section-title">Celebrating Purulia's Chhau Nach</h2>
+        <p>At Triveraa Sonkupi Eco Resort, Chhau Nach is more than a performance — it is the living heartbeat of Purulia. We champion this UNESCO-recognised masked dance as a defining pillar of our guest experience, proudly featuring live Chhau presentations in our cultural calendars, seasonal festivals and festive evening programmes throughout the year.</p>
+        <p>Our commitment begins with the artistes themselves: we collaborate with hereditary Chhau performers and local troupes, offering them a stage, fair remuneration and a growing audience of travellers from across India and abroad. Through curated storytelling, mask &amp; costume showcases and interactive workshops, we invite guests to discover the mythological tales, elaborate headdresses and rhythmic energy that define this craft.</p>
+        <p class="mb-extra">From intimate bonfire performances to heritage evenings and photography experiences set against our hill-view amphitheatre, our boutique resort makes Chhau authentic, accessible and unforgettable — reinforcing its recognition with every visit.</p>
+        <a href="#contact" class="btn btn-ghost">Experience a Chhau Evening</a>
       </div>
     </div>
   </section>
